@@ -1,0 +1,13 @@
+const { defineConfig } = require("cypress");
+
+module.exports = defineConfig({
+  e2e: {
+    baseUrl: "https://www.saucedemo.com",
+    chromeWebSecurity: false,
+    video: false,
+    screenshotOnRunFailure: true,
+    blockHosts: ["*backtrace.io", "*google-analytics.com"],
+    viewportWidth: 1280,
+    viewportHeight: 720,
+  },
+});
